@@ -14,3 +14,18 @@ The model architecture consists of four sequential LSTM layers. Following the LS
 
 ## Results and Discussions
 Table 1 represents classification accuracy for three different principle components. The classification accuracy using 64 principal components was observed to be lower than that with 25 components. This is likely because the additional components, while capturing more variance, also include noise and less discriminative features, which may reduce the classifier's ability to generalize effectively. By retaining only 25 components, corresponding to 99% of the total variance, the PCA transformation emphasized the most critical features while discarding redundant or irrelevant information, leading to improved classification performance.
+
+<div align="center">
+  
+| PCA             | PCA 15 | PCA 25 | PCA 64 |
+|-----------------|--------|--------|--------|
+| Overall Loss    | 0.67   | 0.355  | 1.127  |
+| Overall Accuracy (%) | 83.36 | 94.08  | 67.36  |
+
+Table 1: Classification accuracy for different principle components
+
+![image](https://github.com/user-attachments/assets/16c0c16b-3cdf-4f3f-b049-35a3925d5949)
+Figure 1: [Left]- Classification Map for labelled data  [Right]-Crop Classification Map obtained from 25 principle componentt
+</div>
+
+Figure 1 (right) depicts the crop classification map, which consists of 16 distinct classes derived using 25 principal components from the hyperspectral dataset.
