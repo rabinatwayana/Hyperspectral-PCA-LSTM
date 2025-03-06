@@ -29,3 +29,6 @@ Figure 1: [Left]- Classification Map for labelled data  [Right]-Crop Classificat
 </div>
 
 Figure 1 (right) depicts the crop classification map, which consists of 16 distinct classes derived using 25 principal components from the hyperspectral dataset.
+
+### Reference 
+https://github.com/mtalebizadeh/hyperspectral-image-processing
